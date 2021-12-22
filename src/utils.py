@@ -12,3 +12,11 @@ def shorten_url(url: str):
     encoded_str = base64.urlsafe_b64encode(digest_str)
     shortened_url = encoded_str.decode()[:7]
     return shortened_url
+
+
+def store_url(orig_url: str, short_url: str):
+    """
+    Store url in a .txt file
+    """
+    with open("artifacts/urls.txt", "a") as urlfile:
+        urlfile.write(f"{orig_url} {short_url}\n")
