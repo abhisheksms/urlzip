@@ -2,7 +2,8 @@ from fastapi import FastAPI
 from fastapi.responses import RedirectResponse
 from fastapi.exceptions import HTTPException
 
-from utils import shorten_url
+from src.utils import shorten_url
+# from utils import shorten_url
 
 app = FastAPI()
 urlstore = {}

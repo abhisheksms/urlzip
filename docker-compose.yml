@@ -2,7 +2,7 @@ version: '3'
 
 services:
   fastapi:
-    command: uvicorn api:app --host 0.0.0.0
+    command: uvicorn src.api:app --host 0.0.0.0
     build:
       context: .
       dockerfile: ./Dockerfile
