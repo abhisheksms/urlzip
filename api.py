@@ -13,4 +13,4 @@ def get_original_link(url: str):
     Accepts url and returns it's shortened version
     """
     short_url = shorten_url(url)
-    return short_url
+    return f"http://localhost:8000/{short_url}"
