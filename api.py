@@ -11,12 +11,13 @@ urlstore = {}
 def root():
     return {"message": "ok"}
 
+
 @app.get('/shorten')
 def get_original_link(url: str):
     """
     Accepts url and returns it's shortened version
     """
-    short_url = shorten_url(url)
+    short_url = shorten_url(url.rstrip("/"))
     urlstore[short_url] = url
     return f"http://localhost:8000/{short_url}"
 
