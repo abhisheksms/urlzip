@@ -5,7 +5,7 @@ A URL Shortening service
 Steps to setup
 
 
-1. To setup the project, we perform the following steps, we would require docker compose for this setup
+1. To setup the project, we perform the following steps, we would require docker compose
    ```shell
       $ git clone https://github.com/abhisheksms/url-shortener.git
       $ cd url-shortener
